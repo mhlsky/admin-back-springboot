@@ -5,9 +5,9 @@
 
     <!-- 项目基本信息 -->
     <groupId>com.mhlsky</groupId>
-    <artifactId>back</artifactId>
+    <artifactId>admin-back</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>admin</name>
+    <name>admin-back</name>
     <description>admin</description>
 
     <!-- 父项目的打包方式 -->
@@ -19,7 +19,6 @@
         <module>back-domain</module>
         <module>back-infrastructure</module>
         <module>back-common</module>
-        <module>back-api</module>
     </modules>
 
     <properties>

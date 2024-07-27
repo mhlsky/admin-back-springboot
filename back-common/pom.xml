@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.mhlsky</groupId>
-        <artifactId>back</artifactId>
+        <artifactId>admin-back</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -136,16 +136,19 @@
             <artifactId>jackson-datatype-jsr310</artifactId>
         </dependency>
 
+        <!-- ip地址定位库 -->
         <dependency>
             <groupId>org.lionsoul</groupId>
             <artifactId>ip2region</artifactId>
         </dependency>
 
+        <!-- Java Mock 框架，主要是用来做 Mock 测试，它可以模拟任何 Spring 管理的 Bean、模拟方法的返回值、模拟抛出异常等等 -->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-all</artifactId>
         </dependency>
 
+        <!--    在 Java 应用中嵌入 Redis 服务器的库 ，测试和快速原型开发-->
         <dependency>
             <groupId>it.ozimov</groupId>
             <artifactId>embedded-redis</artifactId>
