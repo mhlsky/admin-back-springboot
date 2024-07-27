@@ -1,4 +1,4 @@
-package com.mhlsky.backadmin;
+package com.mhlsky.admin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,10 +1,10 @@
-package com.mhlsky.backcommon;
+package com.mhlsky.domain;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BackCommonApplicationTests {
+class BackDomainApplicationTests {
 
     @Test
     void contextLoads() {
