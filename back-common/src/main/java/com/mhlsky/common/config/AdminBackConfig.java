@@ -1,8 +1,12 @@
-package com.mhlsky.infrastructure.config;
+package com.mhlsky.common.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+import com.mhlsky.common.constant.Constants;
+
+
+import java.io.File;
 
 /**
  * @author mhlsky孟
@@ -53,10 +57,52 @@ public class AdminBackConfig {
     private static String rsaPrivateKey;
 
     private static String apiPrefix;
+
+    public static String getFileBaseDir() {
+        return fileBaseDir;
+    }
+
+    public void setFileBaseDir(String fileBaseDir) {
+        AdminBackConfig.fileBaseDir = fileBaseDir  + File.separator + Constants.RESOURCE_PREFIX;
+    }
+
+    public static String getApiPrefix() {
+        return apiPrefix;
+    }
+
+    public void setApiPrefix(String apiDocsPathPrefix) {
+        AdminBackConfig.apiPrefix = apiDocsPathPrefix;
+    }
+
     public static boolean isAddressEnabled() {
         return addressEnabled;
     }
+
+    public void setAddressEnabled(boolean addressEnabled) {
+        AdminBackConfig.addressEnabled = addressEnabled;
+    }
+
+    public static String getCaptchaType() {
+        return captchaType;
+    }
+
+    public void setCaptchaType(String captchaType) {
+        AdminBackConfig.captchaType = captchaType;
+    }
+
+    public static String getRsaPrivateKey() {
+        return rsaPrivateKey;
+    }
+
+    public void setRsaPrivateKey(String rsaPrivateKey) {
+        AdminBackConfig.rsaPrivateKey = rsaPrivateKey;
+    }
+
     public static boolean isDemoEnabled() {
         return demoEnabled;
+    }
+
+    public void setDemoEnabled(boolean demoEnabled) {
+        AdminBackConfig.demoEnabled = demoEnabled;
     }
 }
