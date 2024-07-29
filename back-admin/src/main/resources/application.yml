@@ -1,0 +1,8 @@
+#spring.application.name=back-admin
+
+
+# Spring\u914D\u7F6E \u5982\u679C\u9700\u8981\u65E0Mysql  \u65E0Redis\u76F4\u63A5\u542F\u52A8\u7684\u8BDD  dev\u6539\u4E3Atest
+# \u751F\u4EA7\u73AF\u5883\u628Adev\u6539\u4E3Aprod
+spring:
+  profiles:
+    active: basic
