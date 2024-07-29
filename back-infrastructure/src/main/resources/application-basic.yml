@@ -1,0 +1,12 @@
+# 基础公用的配置参数放置在这份yml中
+
+
+
+# Spring配置
+spring:
+  # 资源信息
+  messages:
+    # 国际化资源文件路径
+    basename: i18n/messages
+    # 有些版本的 IDEA  会自动设置properties的编码为IOS-8859-1 请在IDEA配置里设置成UTF8
+    encoding: UTF-8
