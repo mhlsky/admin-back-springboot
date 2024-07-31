@@ -371,6 +371,7 @@ public enum ErrorCode implements ErrorCodeInterface {
 
         EXCEL_PROCESS_ERROR(8, "excel处理失败：{}", "Internal.EXCEL_PROCESS_ERROR"),
 
+        STARTER_INTERNET_ERROR(9, "获取端口失败：{}", "Internal.STARTER_INTERNET_ERROR")
         ;
 
         private final int code;
