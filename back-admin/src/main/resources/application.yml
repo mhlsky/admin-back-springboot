@@ -1,8 +1,23 @@
-#spring.application.name=back-admin
+# 开发环境配置
+server:
+  # 服务器的HTTP端口，默认为8080
+  port: 8080
+  servlet:
+    # 应用的访问路径
+    context-path: /
+  tomcat:
+    # tomcat的URI编码
+    uri-encoding: UTF-8
+    # 连接数满后的排队数，默认为100
+    accept-count: 1000
+    threads:
+      # tomcat最大线程数，默认为200
+      max: 800
+      # Tomcat启动初始化的线程数，默认值10
+      min-spare: 100
 
-
-# Spring\u914D\u7F6E \u5982\u679C\u9700\u8981\u65E0Mysql  \u65E0Redis\u76F4\u63A5\u542F\u52A8\u7684\u8BDD  dev\u6539\u4E3Atest
-# \u751F\u4EA7\u73AF\u5883\u628Adev\u6539\u4E3Aprod
+# Spring配置 如果需要无Mysql  无Redis直接启动的话  dev改为test
+# 生产环境把dev改为prod
 spring:
   profiles:
-    active: basic
+    active: basic,dev

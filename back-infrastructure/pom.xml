@@ -45,6 +45,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- SpringDoc  -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+        </dependency>
+
 
         <!-- 阿里数据库连接池 -->
         <dependency>
@@ -76,7 +82,8 @@
             <artifactId>mybatis-plus-generator</artifactId>
         </dependency>
 
-        <!--velocity代码生成使用模板 -->        <dependency>
+        <!--velocity代码生成使用模板 -->
+        <dependency>
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity-engine-core</artifactId>
         </dependency>
@@ -99,12 +106,6 @@
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
-
-        <dependency>
-            <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-ui</artifactId>
-        </dependency>
-
 
 
 
