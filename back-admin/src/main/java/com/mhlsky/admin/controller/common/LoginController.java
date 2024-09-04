@@ -2,6 +2,7 @@ package com.mhlsky.admin.controller.common;
 
 import cn.hutool.core.util.StrUtil;
 import com.mhlsky.admin.customize.service.login.LoginService;
+import com.mhlsky.admin.customize.service.login.dto.CaptchaDTO;
 import com.mhlsky.admin.customize.service.login.dto.ConfigDTO;
 import com.mhlsky.common.config.AdminBackConfig;
 import com.mhlsky.common.core.dto.ResponseDTO;
@@ -46,10 +47,17 @@ public class LoginController {
     @Operation(summary = "配置信息")
     public ResponseDTO<ConfigDTO> getConfig() {
         ConfigDTO configDTO = loginService.getConfig();
-        System.out.println(configDTO);
         return ResponseDTO.ok(configDTO);
 
     }
 
-
+    /**
+     * 生成验证码
+     */
+    @Operation(summary = "验证码")
+    @GetMapping("/captchaImage")
+    public ResponseDTO<CaptchaDTO> getCaptchaImg() {
+        CaptchaDTO captchaImg = loginService.generateCaptchaImg();
+        return ResponseDTO.ok(captchaImg);
+    }
 }
