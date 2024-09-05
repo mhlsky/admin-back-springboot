@@ -44,8 +44,8 @@ public class BackAdminApplication {
                 "\n\t" +
                         "----------------------------------------------------------\n\t" +
                         "Application  is running! Access URLs:\n\t" +
-                        "Local: \t\thttp://localhost:" + port + path + "/\n\t" +
-                        "External: \thttp://" + ip + ":" + port + path + "/\n\t" +
+                        "Local: \t\thttp://localhost:" + port + path + "\n\t" +
+                        "External: \thttp://" + ip + ":" + port + path + "\n\t" +
                         "------------------------------------------------------------");
 
 
